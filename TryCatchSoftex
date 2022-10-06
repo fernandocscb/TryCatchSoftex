@@ -1,0 +1,19 @@
+package material.excecao;
+
+import java.util.Scanner;
+
+public class ExTryCatch {
+  public static void main(String[] args) {
+    Scanner s = new Scanner(System.in);
+    try {
+      System.out.print("Informe um valor inteiro:");
+      int a = s.nextInt();
+      System.out.print("Informe um valor inteiro..:");
+      int b = s.nextInt();
+
+      System.out.println(a+ " + " + b + " = " + (a+b));
+    } catch (Exception ex) {
+      System.out.println("ERRO - Valor digitado nao e um numero inteiro!");
+    }
+  }
+}
